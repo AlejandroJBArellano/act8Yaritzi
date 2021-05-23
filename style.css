@@ -1,0 +1,66 @@
+body{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    font-family: 'Merriweather', serif;
+    user-select: none;
+}
+body div header .title{
+    text-align: center;
+    background-color: darkmagenta;
+    color: white;
+    padding: 5px 0;
+}
+body div header .nav{
+    background-color: hotpink;
+    margin: 10px 0;
+    border: 3px dotted red;
+    border-radius: 10px;
+}
+body div header .nav ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+body div header .nav ul li{
+    display: inline;
+    list-style: none;
+}
+body div header .nav ul li:hover{
+    cursor: pointer;
+}
+body div main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+}
+body div main section{
+    display: grid;
+    grid-row: span 4;
+    row-gap: 20px;
+}
+body div main section article{
+    border-radius: 10px;
+    border: 3px solid black;
+}
+body div main section article:hover{
+    color: darkblue;
+    background-color: pink;
+}
+body div main section article img{
+    height: 100%;
+    width: 100%;
+}
+body div main section article p{
+    margin: 0;
+}
+body div footer{
+    text-align: center;
+    background-color: deeppink;
+    border: 3px double black;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+body div footer h3 {
+    display: inline;
+}
